@@ -1,0 +1,3 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(CMake_Lesson10_01)
+add_executable(The_simplest_project 10_01.cpp)
