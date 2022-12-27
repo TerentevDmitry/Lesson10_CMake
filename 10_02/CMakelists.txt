@@ -1,0 +1,3 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(CMake_Lesson10_02)
+add_executable(The_more_complicated_project 03.cpp Triangle.cpp EquilateralTriangle.cpp Figure.cpp IsoscelesTriangle.cpp Parallelogram.cpp PrintFigure.cpp Quadrilateral.cpp Rectangle.cpp Rhomb.cpp RightTriangle.cpp Square.cpp)
