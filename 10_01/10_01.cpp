@@ -16,5 +16,4 @@ int main()
 
 	std::cout << "Здравствуйте, " << name << "!";
 	std::cout << std::endl;
-
 }
