@@ -1,3 +1,14 @@
 cmake_minimum_required(VERSION 3.22.0)
 project(CMake_Lesson10_02)
-add_executable(The_more_complicated_project 03.cpp Triangle.cpp EquilateralTriangle.cpp Figure.cpp IsoscelesTriangle.cpp Parallelogram.cpp PrintFigure.cpp Quadrilateral.cpp Rectangle.cpp Rhomb.cpp RightTriangle.cpp Square.cpp)
+
+set (SOURCES 
+03.cpp Figure.cpp Triangle.cpp RightTriangle.cpp EquilateralTriangle.cpp 
+IsoscelesTriangle.cpp Quadrilateral.cpp Parallelogram.cpp Rectangle.cpp 
+Rhomb.cpp Square.cpp PrintFigure.cpp)
+
+set (HEADERS 
+Figure.h Triangle.h RightTriangle.h EquilateralTriangle.h 
+IsoscelesTriangle.h Quadrilateral.h Parallelogram.h 
+Rectangle.h Rhomb.h Square.h PrintFigure.h)
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
